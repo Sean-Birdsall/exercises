@@ -17,34 +17,34 @@ td, th {
 .nums {
     font-size: 32px;
     font-weight: bold;
-    padding-top: 20px;
+    padding-top: 15px;
 }
 
 .center {
     text-align: center;
 }
 
-#stats {
+.stats {
     width: 35%;
 }
 
 .words {
     font-size: small;
     color: gray;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
-#barchart th {
+.barchart th {
     width: 15%;
     text-align: right;
 }
 
-#barchart th, #barchart td {
+.barchart th, .barchart td {
     padding: 1px 1px 1px 5px;
     margin: 0;
 }
 
-#barchart div {
+.barchart div {
     background-color: #659CE0;
     color: white;
     font-weight: bold;
@@ -69,11 +69,11 @@ td, th {
     border-radius: 15px;
 }
 
-#hello {
+.hello {
     padding: 15px;
 }
 
-#hello div {
+.hello div {
     text-align: right;
     background-color: red;
     display: table;
@@ -83,7 +83,7 @@ td, th {
     opacity: 0.5;
 }
 
-#hello div a {
+.hello div a {
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -92,4 +92,16 @@ td, th {
 .left {
     float: left;
     margin-right: 10px;
+}
+
+.tall {
+    height: 400px;
+}
+
+.inline {
+    display: inline;
+}
+
+.mid {
+    height: 100px;
 }
