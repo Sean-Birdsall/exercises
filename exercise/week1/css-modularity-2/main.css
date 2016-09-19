@@ -1,0 +1,28 @@
+/* ADD YOUR STYLES HERE */
+
+.center {
+    text-align: center;
+}
+
+.pad {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.line {
+    display: inline-block;
+}
+
+.vtop {
+    vertical-align: text-top;
+}
+
+.vcent {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.mid {
+    height: 300px;
+}
