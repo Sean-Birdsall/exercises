@@ -1,1 +1,95 @@
 /* ADD YOUR STYLES HERE */
+
+table {
+    width: 100%;
+    font-family: Helvetica;
+}
+
+.mid-row {
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+}
+
+td, th {
+    padding: 10px;
+}
+
+.nums {
+    font-size: 32px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+#stats {
+    width: 35%;
+}
+
+.words {
+    font-size: small;
+    color: gray;
+    padding-bottom: 20px;
+}
+
+#barchart th {
+    width: 15%;
+    text-align: right;
+}
+
+#barchart th, #barchart td {
+    padding: 1px 1px 1px 5px;
+    margin: 0;
+}
+
+#barchart div {
+    background-color: #659CE0;
+    color: white;
+    font-weight: bold;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    padding-left: 5px;
+}
+
+.container {
+    background-color: gray;
+    height: 450px;
+    position: relative;
+}
+
+.content {
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 15px;
+}
+
+#hello {
+    padding: 15px;
+}
+
+#hello div {
+    text-align: right;
+    background-color: red;
+    display: table;
+    border-radius: 5px;
+    padding: 5px 35px 5px 35px;
+    margin-left: 385px;
+    opacity: 0.5;
+}
+
+#hello div a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.left {
+    float: left;
+    margin-right: 10px;
+}

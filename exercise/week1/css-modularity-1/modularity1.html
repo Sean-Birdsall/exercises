@@ -26,7 +26,7 @@
 								<td>Daaken</td>
 								<td>@seandaken</td>
 							</tr>
-							<tr>
+							<tr class="mid-row">
 								<td>1</td>
 								<td>Raine</td>
 								<td>Lourie</td>
@@ -55,13 +55,13 @@
 								</tr>
 							</thead>
 							<tbody>
-								<tr>
+								<tr  class="mid-row">
 									<td>0</td>
 									<td>Sean</td>
 									<td>Daaken</td>
 									<td>@seandaken</td>
 								</tr>
-								<tr>
+								<tr class="mid-row">
 									<td>1</td>
 									<td>Raine</td>
 									<td>Lourie</td>
@@ -86,12 +86,12 @@
 	    		<p class="instruction-text">Three columns, three prominent numbers, three small labels</p>
 					<div class="instruction-answer">
 			    	<!-- Edit here -->
-			    	<table>
+			    	<table id="stats" class="center">
 			    		<tbody>
-			    			<tr>
-			    				<td><div>7</div><div>followers</div></td>
-			    				<td><div>59</div><div>starred</div></td>
-			    				<td><div>28</div><div>following</div></td>
+			    			<tr class="mid-row">
+			    				<td><div class="nums">7</div><div class="words">followers</div></td>
+			    				<td><div class="nums">59</div><div class="words">starred</div></td>
+			    				<td><div class="nums">28</div><div class="words">following</div></td>
 			    			</tr>
 			    		</tbody>
 			    	</table>
@@ -105,7 +105,7 @@
 	    		<p class="instruction-text">Bar widths are set in the HTML as if they were populated from the back-end. Everything else should be styled with CSS.</p>
 					<div class="instruction-answer">
 			    	<!-- Edit here -->
-			    	<table>
+			    	<table id="barchart">
 			    		<tr>
 			    			<th>Javascript</th>
 			    			<td><div style="width: 99%">21%</div></td>
@@ -157,9 +157,9 @@
 	    		<p class="instruction-text">The lightbox should display arbitrary content, centered vertically and horizontally, with everything behind it (the rest of the page) darkened. It should obscure the entire screen, no matter where you are on the page. You may want to disable these styles when you're not actively working on them, otherwise they'll cover the whole page.</p>
 					<div class="instruction-answer">
 			    	<!-- Edit here -->
-			    	<div>
-			    		<div>
-				    		<div>
+			    	<div class="container">
+			    		<div class="content">
+				    		<div id="hello">
 					    		<h3>Hello</h3>
 						    	<p>Cupcake ipsum dolor sit amet. Gummies lemon drops pastry topping wypas jujubes gummi bears. Cotton candy powder topping bear claw halvah jelly beans bear claw. Chocolate cake ice cream gummies apple pie muffin wafer gummi bears. Cupcake ipsum dolor sit amet. Gummies lemon drops pastry topping wypas jujubes gummi bears. Cotton candy powder topping bear claw halvah jelly beans bear claw. Chocolate cake ice cream gummies apple pie muffin wafer gummi bears.</p>
 						    	<div>
@@ -178,7 +178,7 @@
 	    		<p class="instruction-text">A media block is a left-floated image with some content beside it. Think Facebook updates.</p>
 					<div class="instruction-answer">
 			    	<!-- Edit here -->
-			    	<img src="http://placehold.it/50">
+			    	<img class="left" src="http://placehold.it/50">
 			    	<p>Cupcake ipsum dolor sit amet. Gummies lemon drops pastry topping wypas jujubes gummi bears. Cotton candy powder topping bear claw halvah jelly beans bear claw. Chocolate cake ice cream gummies apple pie muffin wafer gummi bears.</p>
 				    <!-- End editable area -->
 			    </div>
@@ -188,11 +188,11 @@
 		    	<!-- Edit here -->
 					<div class="instruction-answer">
 			    	<div>
-				    	<img src="http://placehold.it/50">
+				    	<img class="left" src="http://placehold.it/50">
 				    </div>
 			    	<div>
 				    	<h2>Cupcake Ipsum</h2>
-				    	<p>Cupcake ipsum dolor sit amet. Gummies lemon drops pastry topping wypas jujubes gummi bears. Cotton candy powder topping bear claw halvah jelly beans bear claw. Chocolate cake ice cream gummies apple pie muffin wafer gummi bears.</p>
+				    	<p style="margin-left: 60px">Cupcake ipsum dolor sit amet. Gummies lemon drops pastry topping wypas jujubes gummi bears. Cotton candy powder topping bear claw halvah jelly beans bear claw. Chocolate cake ice cream gummies apple pie muffin wafer gummi bears.</p>
 				    </div>
 				    <!-- End editable area -->
 				  </div>
