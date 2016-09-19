@@ -26,3 +26,33 @@
 .mid {
     height: 300px;
 }
+
+.hlist {
+    list-style-type: none;
+}
+
+.hlist li {
+    display: inline;
+}
+
+.button1, .button2, .button3, input {
+    background-color: #E88389;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button2, input {
+    width: 140px;
+    border: none;
+    padding: 5px 30px 5px 30px;
+}
+
+.button1 {
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.button3 {
+   padding: 5px; 
+}
