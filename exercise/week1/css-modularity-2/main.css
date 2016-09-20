@@ -30,6 +30,7 @@
 
 .hlist {
     list-style-type: none;
+    padding: 0;
 }
 
 .hlist li {
@@ -67,22 +68,24 @@
 
 nav {
     background-color: #E88389;
-    width: 75%;
+    width: 88%;
     border-radius: 5px;
     padding-top: 10px;
     padding-bottom: 10px;
-    
+    text-align: center;
 }
 
 nav li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 35px 10px 35px;
+    transition: all 1s;
 }
 
 nav li a:hover {
-    background-color: gray;
+    background-color: white;
+    color: #E88389;
     opacity: 0.5;
 }
 
@@ -121,8 +124,58 @@ span {
     float: left;
 }
 
+.noOverFlow {
+    overflow: hidden;
+}
+
+.clrleft {
+    clear: left;
+}
+
 time {
     font-size: 75%;
     color: gray;
+}
+
+.gravatar {
+    padding: 0px 5px 5px 0px;
+}
+
+.toolong {
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 235px;
+}
+
+.tabList {
+    padding: 0;
+}
+
+.tabs {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    border-left: solid 1px gray;
+    border-top: solid 1px gray;
+    border-right: solid 1px gray;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 5px;
+    margin: 0px 5px 0px 5px;
+}
+
+.active {
+    border-bottom: solid 1px white;
+}
+
+.tabs a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.bordered {
+    border: solid 1px gray;
+    border-radius: 5px;
+    padding: 5px;
 }
 
