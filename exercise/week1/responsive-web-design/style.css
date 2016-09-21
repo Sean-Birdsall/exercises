@@ -1,0 +1,49 @@
+body {
+    text-align: center;
+}
+
+.navlink {
+    text-decoration: none;
+    color: red;
+    border-radius: 15px;
+    margin: 5px;
+    font-weight: bold;
+    padding: 0 50px;
+    background-color: skyblue;
+}
+
+.reg {
+    max-width: 960px;
+    margin: auto;
+}
+
+.sml-img {
+    border-radius: 5px;
+}
+.lrg-img {
+    width: 80%;
+    border-radius: 5px;
+}
+
+@media all and (min-width: 960px){
+    .reg {
+        padding: 0 1.5625%;
+    }
+}
+
+@media all and (max-width: 820px){
+    .navlink {
+        display: block;
+        width: 100%;
+        padding: 5px 0;
+    }
+}
+
+@media all and (max-width: 643px){
+    .stack {
+        display: block;
+        width: 70%;
+        margin: auto;
+        padding: 2.33281493%;
+    }
+}
