@@ -7,18 +7,10 @@
 		-webkit-transform-style
 		-webkit-backface-visibility
 */
-#portfolio {
-
-}
 
 .portfolio-item, .front, .back {
 	backface-visibility: hidden;
 	transition: all 1s;
-}
-
-.portfolio-item {
-	
-	
 }
 
 .portfolio-item:hover {
@@ -32,10 +24,5 @@
 
 .back {
 	transform: rotateY(180deg);
-	transform-style: preserve-3d;
 }
 
-.back:hover {
-	transform: rotateY(180deg);
-	transform-style: preserve-3d;
-}
