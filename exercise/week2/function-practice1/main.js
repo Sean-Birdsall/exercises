@@ -64,7 +64,7 @@ console.log(square(5));
 console.log(negate(5));
 console.log(negate(-8));
 console.log(toArray(1, 4, 5));
-console.log(toArray(8, 9, 10));
+console.log(toArray(8, 'A', false));
 console.log(startsWithA('aardvark'));
 console.log(startsWithA('bear'));
 console.log(excite('yes'));

@@ -1,3 +1,5 @@
+// Variable Declarations
+
 var numOfVictims = 0;
 var numOfVols = 0;
 var victims = [];
@@ -26,7 +28,7 @@ function askForVols() {
         moreEntries = false;
     }
 }
-// Ask
+// Ask for victims
 askForVics();
 // Start loop as long as there are victim entries to be had
 while (moreEntries) {
@@ -38,7 +40,7 @@ while (moreEntries) {
     });
     askForVics();
 }
-
+// 
 askForVols();
 // Starting loop for volunteers
 while (moreEntries) {
@@ -50,6 +52,7 @@ while (moreEntries) {
     });
     askForVols();
 }
+
 // Window alert
 alert("The current disaster has " + numOfVictims + " victims." + "\n" +
 "We currently have " + numOfVols + " volunteers on hand." + "\n" +
@@ -58,4 +61,24 @@ alert("The current disaster has " + numOfVictims + " victims." + "\n" +
 }) + "\n" +
 "And a list of all volunteers: " + vols.map(function(e){ // the paramater of the callback function represents each object in the array
     return e.name;
-}));
+}) + "\n");
+
+var vicInNeed = prompt("Please enter a victim to find out which volunteer's are available to help:");
+
+var vicStr;
+// Looping through victims array checking if the name matches, then assign the victim's street to the vicStr variable
+for (var i = 0; i < victims.length; i++) {
+    if (victims[i].name === vicInNeed) {
+        vicStr = victims[i].str;
+    }
+}
+var volsOnStreet = [];
+// Looping through vols array checking if the street name matches, then add the volunteer name to a new array called volsOnStreet
+for (var i = 0; i < vols.length; i++) {
+    if (vols[i].str === vicStr) {
+        volsOnStreet.push(vols[i].name);
+    }
+}
+
+alert(`The victim named ${vicInNeed} lives on ${vicStr}. \n
+The following volunteers also live on ${vicStr}: \n ${volsOnStreet}`);
