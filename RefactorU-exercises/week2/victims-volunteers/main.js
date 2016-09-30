@@ -11,8 +11,8 @@ var vols = [];
 function askForVics() {
     response = prompt("Do you have a victim to enter? (y or n)");
     if (response.toLowerCase() === 'y') {
-    moreEntries  = true;
-    numOfVictims++;
+        moreEntries  = true;
+        numOfVictims++;
     } else {
         moreEntries = false;
     }
@@ -22,8 +22,8 @@ function askForVics() {
 function askForVols() {
     response = prompt("Do you have a volunteer to enter? (y or n)");
     if (response.toLowerCase() === 'y') {
-    moreEntries  = true;
-    numOfVols++;
+        moreEntries  = true;
+        numOfVols++;
     } else {
         moreEntries = false;
     }
