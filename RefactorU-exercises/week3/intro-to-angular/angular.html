@@ -16,7 +16,11 @@
                     <li>{{ sqrl }}</li>    
             </div>
             </ul>        
-        
+            <button id="bg-btn" ng-click="popup()">Click Here for the Pop-up!</button>
+            <div id="popper" class="ng-hide pop">
+                <button ng-click="close()">X</button>
+                <h1>Meet Local Singles in Denver!!!</h1>
+            </div>
             <div>
                 <button ng-click="addPoint()">Give Heading 1 Exclamation Points</button>
                 <button ng-click="addPoint2()">Give Heading 2 Exclamation Points</button>

@@ -43,4 +43,14 @@ var myApp = angular.module('myApp', [])
             }
         }
         
+        $scope.popup = function() {
+            var x = document.getElementById('popper');
+            x.className = "ng-show pop"
+        }
+        
+        $scope.close = function() {
+            var x = document.getElementById('popper');
+            x.className = "ng-hide"
+        }
+        
     }]);

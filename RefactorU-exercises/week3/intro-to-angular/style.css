@@ -1,3 +1,17 @@
 .pink {
     color: pink;
 }
+
+.pop {
+    position: fixed;
+    width: 80%;
+    height: 400px;
+    margin: 50px auto;
+    background-color: gray;
+}
+
+#bg-btn {
+    margin: 25px;
+    width: 60%;
+    height: 200px;
+}
