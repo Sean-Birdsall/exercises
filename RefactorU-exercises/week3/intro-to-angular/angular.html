@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Intro to Angular</title>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+    </head>
+    <body ng-app="myApp">
+        <div ng-controller="myCtrl">
+            <button ng-click="myFunc()">CLICK ME!</button>
+            <h1>{{ someText }}</h1>
+            <button ng-click="revealList()">Reveal List</button>
+            <ul>
+            <div ng-repeat="sqrl in squirrelList">         
+                    <li>{{ sqrl }}</li>    
+            </div>
+            </ul>        
+        
+            <div>
+                <button ng-click="addPoint()">Give Heading 1 Exclamation Points</button>
+                <button ng-click="addPoint2()">Give Heading 2 Exclamation Points</button>
+                <h2 id="head1">Heading 1</h2>
+                <p ng-class="{ pink: hover1 }" ng-mouseenter="hover1 = true" ng-mouseleave="hover1 = false">
+                    kdfaj;sdf dkfa;sjf dakd;jfa sdf;aksjdfa;sdk fa;sdkfjad jfasdkjfadsf
+                    adskfljasd;fkjdakf akdfj dfkja;kdf aksjfakljf these are just words
+                    that I am practicing typing. I am not really typing anything important
+                </p>
+                <a ng-click="getConfirm()" id="espnLink" href="http://www.espn.com">Link 1</a>
+                <h2 id="head2">Heading 2</h2>
+                <p ng-class="{ pink: hover }" ng-mouseenter="hover = true" ng-mouseleave="hover = false">
+                    Here is yet another insignificant paragraph that was created only
+                    for the reason of practicing with angular because that is what
+                    I am doing today.
+                </p>
+                <a ng-click="getConfirm2()" id="nflLink" href="http://www.nfl.com">Link 2</a>
+            </div>
+        </div>
+    </body>
+</html>
