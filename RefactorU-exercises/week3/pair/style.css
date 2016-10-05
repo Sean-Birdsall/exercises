@@ -1,0 +1,19 @@
+h3 {
+    display: inline;
+}
+
+span {
+    display: block;
+}
+
+input {
+    display: block;
+}
+
+img {
+    float: left;
+}
+
+p, textarea {
+    clear: left;
+}

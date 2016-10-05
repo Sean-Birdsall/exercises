@@ -1,9 +1,16 @@
-angular.module('myApp', []);
-
-angular.module('myApp')
+angular.module('myApp', [])
     .controller('mainController', mainController);
-        mainController.$inject = ['$scope'];
-        
-function mainController($scope) {
-    $scope.greeting = 'Hello Squirrels!';
+    
+function mainController() {
+    
+    var main = this;
+    
+    main.monkeys = [
+       'Koko',
+       'Casey',
+       'Harambe',
+       'Cheeta'
+       ];
+       
+       
 }

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head>
+        <title>Edit in Place</title>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+    </head>
+    <body ng-controller="appCtrl as main">
+        <img src="https://placehold.it/150x150">
+        <form>
+            <h3 id='head3' ng-click="main.hideText($event)" ng-if="!main.editingName">{{ main.defName }}</h3>
+            <input ng-model="main.name" ng-blur="main.blurName($event)" ng-if="main.editingName" type="text" name="name"/>
+                <span ng-click="main.hideText($event)" id="age" ng-if="!main.editingAge">{{ main.defAge }}</span>
+                <input type="text" name="age" ng-blur="main.blurName($event)" ng-if="main.editingAge" ng-model="main.age"/>
+                <span ng-click="main.hideText($event)" ng-if="!main.editingOcc" id="occ">{{ main.defOcc }}</span>
+                <input type="text" name="occ" ng-blur="main.blurName($event)" ng-if="main.editingOcc" ng-model="main.occ"/>
+            <p ng-click="main.hideText($event)" ng-if="!main.editingBio">
+                {{ main.defBio }}
+            </p>
+            <textarea type="textarea" rows="5" cols="40" name="bio" ng-blur="main.blurName($event)" ng-if="main.editingBio" ng-model="main.bio"/>
+        </form>
+        
+    </body>
+</html>

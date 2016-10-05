@@ -2,13 +2,14 @@
 <html ng-app="myApp">
     <head>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
-        <title>Intro to Angular</title>
+        <title>NG-REPEAT</title>
         <script type="text/javascript" src="main.js"></script>
     </head>
-    <body ng-controller="mainController">
-        <h1>Intro to Angular</h1>
-        <p>
-            {{ greeting }}
-        </p>
+    <body ng-controller="mainController as main">
+       <h1>Hello World!</h1> 
+       <ul>
+           <li ng-repeat="monkey in main.monkeys">Hi my name is {{ monkey }}
+           and I am at index {{ $index }}</li>
+       </ul>
     </body>
 </html>
