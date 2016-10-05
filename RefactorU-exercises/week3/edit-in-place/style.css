@@ -1,44 +1,19 @@
-.labels, .inputs {
-    display: inline-block;
-    margin-top: 10px;
+h3 {
+    display: inline;
 }
 
-.labels label, .inputs input {
+span {
     display: block;
 }
 
-.labels {
-    text-align: right;
-    margin-left: 20px;
-    position: relative;
-    top: 5px;
+input {
+    display: block;
 }
 
-.left {
+img {
     float: left;
 }
 
-.tArea {
-    clear: both;
-    padding: 20px;
-    display: block;
-}
-
-.tArea p {
-    width: 420px;
-    height: 70px;
-    border: solid 1px black;
-}
-
-.tArea label {
-   line-height: 100%;
-   vertical-align: top;
-}
-
-.tbox {
-    box-sizing: border-box;
-    width: 80px;
-    height: 20px;
-    border: solid 1px black;
-    margin: 0 0 0 10px;
+p, textarea {
+    clear: left;
 }
