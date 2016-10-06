@@ -3,6 +3,7 @@
     <head>
         <title>Edit in Place</title>
         <link rel="stylesheet" href="style.css" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
         <script type="text/javascript" src="main.js"></script>
     </head>
@@ -18,8 +19,8 @@
             <p ng-click="main.hideText($event)" ng-if="!main.editingBio">
                 {{ main.defBio }}
             </p>
-            <textarea type="textarea" rows="5" cols="40" name="bio" ng-blur="main.blurName($event)" ng-if="main.editingBio" ng-model="main.bio"/>
+            <textarea type="textarea" rows="3" cols="50" name="bio" ng-blur="main.blurName($event)" ng-if="main.editingBio" ng-model="main.bio"/>
         </form>
-        
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
     </body>
 </html>

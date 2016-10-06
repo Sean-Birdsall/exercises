@@ -10,10 +10,17 @@ input {
     display: block;
 }
 
+input, textarea {
+    font-family: 'Indie Flower', cursive;
+}
+
 img {
     float: left;
+    margin-right: 15px;
 }
 
 p, textarea {
-    clear: left;
+    margin: 15px 0;
+    padding: 0;
+    
 }

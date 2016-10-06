@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="mapApp">
+    <head >
+       <meta charset="utf-8">
+       <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+         <link rel="stylesheet" href="gold.css" />
+        <title> My Website </title>
+    </head>
+<body ng-controller="mapController as main">
+
+<div id="mycontainer">
+
+<!-- <img class="ourPin" src="pin.png"> -->
+<img ng-click="main.markMap($event)" src="topo-co.jpg">
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+  <script src="gold_module.js"></script>
+</body>
+</html>
+
